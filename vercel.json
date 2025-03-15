@@ -1,0 +1,22 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/build/pages/home.html" },
+      { "source": "/home", "destination": "/build/pages/home.html" },
+      { "source": "/projects", "destination": "/build/pages/projects.html" },
+      { "source": "/writing", "destination": "/build/pages/writing.html" },
+      { "source": "/sunsets", "destination": "/build/pages/sunsets.html" }
+    ],
+    "trailingSlash": false,
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600, s-maxage=86400"
+          }
+        ]
+      }
+    ]
+  }
