@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description" 
+    content="Hello! this is Marcus Niihau-Ashby's personal website.
+    That's kinda all there is to it."/>
+    <link href="./style.css" rel="stylesheet"/>
+    <title>Markizzy</title>
+</head>
+
+
+<body class="mx-25">
+    <!-- Navbar -->
+    <div>
+        <nav class="p-4">
+            <div>
+                <ul class="flex justify-end space-x-8">
+                    <li><a href="./home.html" class="text-white font-[Roboto] w-20 h-10 text-3xl">Home</a></li>
+                    <li><a href="./projects.html" class="text-white font-[Roboto] w-20 h-10 text-3xl">Projects</a></li>
+                    <li><a href="./writing.html" class="text-white font-[Roboto] w-20 h-10 text-3xl">Writing</a></li>
+                    <li><a href="./sunsets.html" class="text-white font-[Roboto] w-20 h-10 text-3xl">Sunsets</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    
+    <!-- Flexbox for name/socials then picture -->
+    <div class="flex items-center gap-4 sm:gap-8 md:gap-16 lg:gap-32 "> 
+        
+        <!-- Name/Socials -->
+        <div class="w-3/5">
+            <!-- Name -->
+            <div class="flex flex-col">
+                <h1 class="font-[Poppins] text-[48px] sm:text-[60px] md:text-[72px] lg:text-[88px] xl:text-[100px] transition-all duration-500 text-white font-bold">Marcus</h1> 
+                <h1 class="font-[Poppins] text-[48px] sm:text-[60px] md:text-[72px] lg:text-[88px] xl:text-[100px] transition-all duration-500 text-white font-bold">Niihau-Ashby</h1>
+            </div>
+            <!-- Social Links-->
+            <div class="flex justify-center gap-15 mt-8 sm:w-full">
+                <a href="https://www.linkedin.com/in/marcus-niihau-ashby/" target="_blank">
+                    <img class="w-14 h-14 min-w-[56px] sm:w-16 sm:h-16" src="/images/linkedin.svg"/>
+                </a>
+                <a href="https://github.com/marcusniihauashby" target="_blank">
+                    <img class="w-14 h-14 min-w-[56px] sm:w-16 sm:h-16" src="/images/github.svg"/>
+                </a>
+                <a href="https://www.instagram.com/markizzy21/" target="_blank">
+                    <img class="w-14 h-14 min-w-[56px] sm:w-16 sm:h-16" src="/images/instagram.svg"/>
+                </a>
+                <a href="https://x.com/marcuzzzistaken" target="_blank">
+                    <img class="w-14 h-14 min-w-[56px] sm:w-16 sm:h-16" src="/images/twitter.svg"/>
+                </a>
+                <a href="mailto:marcusna@berkeley.edu">
+                    <img class="w-14 h-14 min-w-[56px] sm:w-16 sm:h-16" src="/images/envelope.svg"/>
+                </a>
+            </div>
+                
+        </div>
+
+        <!-- Picture -->
+        <div id="image-container" class="w-2/5 ">
+            <img class="w-full h-full object-cover rounded-md" alt="it's me!"src="/images/itsme.jpeg"/>
+        </div>
+
+    </div>
+
+    <!-- Text Boxes -->
+    <div class="flex flex-col items-end gap-y-5 h-full mb-30">
+
+        <p class="font-[Neuton] text-white  w-131 ">
+            I’m a Software Engineer studying Cognitive Science and Computer Science at UC Berkeley. 
+            Born and raised in Hawaii - yes, my middle name is too long to fit on this page. 
+            I left home to pursue research learning about the things that I love, that being using computation to understand cognition.
+        </p>
+        <p class="font-[Neuton] text-white w-131">
+            Thus, I love reading papers about tangible models for human cognition (i.e. Hippocampal Place Cell models,  DNN’s representing Vₙ visual cortices).
+            Send me some if you’d like!
+        </p>
+        <p class="font-[Neuton] text-white w-131">
+            Other than technical stuff, I enjoy surfing, weight-lifting, climbing, and keeping my LeetCode streak (stockholm syndrome) intact!
+        </p>
+    </div>
+
+</body>
+</html>
