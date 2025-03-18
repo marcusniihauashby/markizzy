@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <!-- Google Fonts Links -->
-    <link rel="icon" href="/images/appleicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
     />
-
+    
+    <link rel="icon" href="/build/images/myicon.png" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -17,93 +17,71 @@
       content="Hello! this is the projects section of Marcus Niihau-Ashby's personal website.
     That's kinda all there is to it."
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Markizzy</title>
   </head>
-  <body class="mx-25">
+  <body class="mx-5 md:mx-25">
     <!-- Navbar -->
     <div>
-      <nav class="p-4">
-        <div>
-          <ul class="flex justify-end space-x-8">
-            <li>
-              <a
-                href="./home.html"
-                class="text-white font-[Roboto] w-20 h-10 text-3xl"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="./projects.html"
-                class="text-white font-[Roboto] w-20 h-10 text-3xl"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="./writing.html"
-                class="text-white font-[Roboto] w-20 h-10 text-3xl"
-                >Writing</a
-              >
-            </li>
-            <li>
-              <a
-                href="./sunsets.html"
-                class="text-white font-[Roboto] w-20 h-10 text-3xl"
-                >Sunsets</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="p-4">
+            <div>
+                <ul>
+                    <li><a href="./home.html" class="text-white font-[Roboto] w-20 h-10">Home</a></li>
+                    <li><a href="./projects.html" class="text-white font-[Roboto] w-20 h-10">Projects</a></li>
+                    <li><a href="https://docs.google.com/document/d/1TrTB_ikAewMi7dwyQ_Dgfl85ahAZCXnNTHw6XFVtPx0/edit?usp=sharing" target="_blank" class="text-white font-[Roboto] w-20 h-10">Resumé</a></li>
+                    <li><a href="./sunsets.html" class="text-white font-[Roboto] w-20 h-10">Sunsets</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <!-- Split for current/previous projects -->
-    <div class="flex flex-col md:flex-row gap-8">
+    <div class="flex flex-col lg:flex-row gap-8">
       <!-- Projects monologue and current section -->
       <div class="my-10 w-full md:w-1/2">
         <div>
           <h1
-            class="font-[Poppins] text-center md:text-left text-[20px] sm:text-[32px] md:text-[40px] lg:text-[52px] xl:text-[60px] transition-all duration-500 text-white font-bold"
+            class="xl:text-6xl"
           >
             Projects
           </h1>
-          <p class="font-[Neuton] text-white font-light text-2xl my-10 w-full md:w-4/5 lg:w-4/5 max-w-3xl">
+          <p class="xl:text-xl font-light">
             This is a curated collection of my projects, of which I have
             organized into chronological categories. In addition, projects
             illuminated with a lighter color represent my personal favorites -
             ones that I thought taught me the most and showcase my abilities.
           </p>
 
-          <h3
-            class="mt-30 font-[Poppins] text-center text-[20px] sm:text-[32px] md:text-[40px] lg:text-[52px] xl:text-[40px] transition-all duration-500 text-white"
+          <p class="mt-10 xl:text-xl font-light">
+            Also, check out my Resumé (link in the navbar), as it holds more information about me.
+          </p>
+
+          <h2
           >
             Current
-          </h3>
+        </h2>
 
           <!-- Current section for Projects -->
-          <div class="my-10 flex justify-center">
+          <div class="flex justify-center">
+            <!-- this div breaks everything for some reason -->
+            <div>
             <!-- Metabreaker Card -->
-            <div flex justify-center>
               <div
-                class="bg-[#023B38] text-white rounded-2xl p-6 sm:p-8 flex flex-col gap-4 shadow-lg w-full max-w-[600px] relative my-10"
+                class="card"
               >
                 <!-- Top Row -->
                 <div
-                  class="flex justify-between items-center text-lg sm:text-xl relative"
+                  class="flex relative"
                 >
-                  <span class="font-[Neuton]">March 2025</span>
-                  <span
-                    class="font-[Poppins] text-2xl sm:text-3xl absolute left-1/2 -translate-x-1/2"
-                  >
+                  <span>March 2025</span>
+                  <h3>
                     Meta Breaker
-                  </span>
+                  </h3>
                 </div>
 
                 <!-- Description -->
                 <p
-                  class="font-[Neuton] text-center text-sm sm:text-base leading-relaxed mx-6"
+                  class="text-center text-sm sm:text-base leading-relaxed mx-6"
                 >
                   An analysis bot for a popular game (LoL). Trained on
                   consistent trends and flags potentially optimal deviances from
@@ -111,43 +89,41 @@
                 </p>
 
                 <!-- Bottom Row -->
-                <div class="flex justify-between items-center text-2xl">
-                  <span class="font-[Neuton]">Source</span>
-                  <span class="font-[Neuton]">React, Node.Js, PostgreSQL</span>
+                <div>
+                  <!-- <span class="font-[Neuton] ">Source</span> -->
+                  <span class="flex justify-end">React, Node.Js, PostgreSQL</span>
                 </div>
               </div>
 
               <!-- WIP Card -->
               <div
-                class="bg-[#023B38] text-white rounded-2xl p-6 sm:p-8 flex flex-col gap-4 shadow-lg w-full max-w-[600px] relative my-10"
+                class="card"
               >
                 <!-- Top Row -->
                 <div
-                  class="flex justify-between items-center text-lg sm:text-xl relative"
+                  class="flex relative"
                 >
-                  <span class="font-[Neuton]">March 2025</span>
-                  <span
-                    class="font-[Poppins] text-2xl sm:text-3xl absolute left-1/2 -translate-x-1/2"
-                  >
+                  <span>March 2025</span>
+                  <h3>
                     WIP
-                  </span>
+                  </h3>
                 </div>
 
                 <!-- Description -->
                 <p
-                  class="font-[Neuton] text-center text-sm sm:text-base leading-relaxed mx-6"
+                  class="text-center text-sm sm:text-base leading-relaxed mx-6"
                 >
                   Aiming to find scalable solutions for KYC compliance for
                   marginalized communities to get some sort of bank
                   account/banking alternative. Contact me if you have any
-                  additional ideas!
+                  additional ideas/angles!
                 </p>
 
                 <!-- Bottom Row -->
                 <div class="flex justify-between items-center text-2xl">
                   <span class="font-[Neuton]">Source</span>
-                  <a
-                  class="font-[Neuton] text-2xl"
+                  <a 
+                  class="font-[Neuton] text-base sm:text-xl"
                   href="mailto:marcusna@berkeley.edu"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -163,19 +139,16 @@
 
       <!-- Previous section for projects -->
       <div class="w-full md:w-1/2 my-20">
-        <h3
-          class="mfont-[Poppins] text-center text-[20px] sm:text-[32px] md:text-[40px] lg:text-[52px] xl:text-[5] transition-all duration-500 text-white"
-        >
+        <h2>
           Previous
-        </h3>
+        </h2>
 
         <!-- Cards -->
         <div class="flex justify-center">
           <div class="my-10">
             <!-- Gitlet Card -->
             <div
-              class="bg-[#023B38] text-white rounded-2xl p-6 sm:p-8 flex flex-col gap-4 shadow-lg w-full max-w-[600px] relative my-10"
-            >
+            class="card">
               <!-- Top Row -->
               <div
                 class="flex justify-between items-center text-lg sm:text-xl relative"
@@ -190,24 +163,23 @@
 
               <!-- Description -->
               <p
-                class="font-[Neuton] text-center text-sm sm:text-base leading-relaxed mx-6"
-              >
+              class="text-center text-sm sm:text-base leading-relaxed mx-6">
                 A recreation of Git, built from scratch. Complete with
                 serializing/deserializing algorithms, commit-based tracking, and
                 more.
               </p>
 
               <!-- Bottom Row -->
-              <div class="flex justify-between items-center text-2xl">
+              <div class="flex justify-between items-center">
                 <a
-                  class="font-[Neuton] text-2xl"
+                  class="font-[Neuton] text-base sm:text-xl"
                   href="https://github.com/marcusniihauashby/Gitlet"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Source
                 </a>
-                <span class="font-[Neuton]">Java</span>
+                <span>Java</span>
               </div>
             </div>
 
@@ -229,7 +201,7 @@
 
               <!-- Description -->
               <p
-                class="font-[Neuton] text-center text-sm sm:text-base leading-relaxed"
+              class="text-center text-sm sm:text-base leading-relaxed mx-6"
               >
                 Acronym for Build Your Own World. A procedural world generator
                 parsed from any seed. Playable with added tunneling mechanics!
@@ -238,7 +210,7 @@
               <!-- Bottom Row -->
               <div class="flex justify-between items-center text-2xl">
                 <a
-                class="font-[Neuton] text-2xl"
+                class="font-[Neuton] text-base sm:text-xl"
                 href="https://github.com/marcusniihauashby/byow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -267,24 +239,21 @@
 
               <!-- Description -->
               <p
-                class="font-[Neuton] text-center text-sm sm:text-base leading-relaxed"
-              >
-                The source code for this website! There’s a special place in my
-                heart for this one. I did learn a boatload about webdev from
-                this one.
+              class="text-center text-sm sm:text-base leading-relaxed mx-6">
+                The source code for this website. My Web development fundamentals were substantially honed when I made this site.
               </p>
 
               <!-- Bottom Row -->
               <div class="flex justify-between items-center">
                 <a
-                  class="font-[Neuton] text-2xl"
+                  class="font-[Neuton] text-base sm:text-xl"
                   href="https://github.com/marcusniihauashby/markizzy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Source
                 </a>
-                <span class="font-[Neuton] text-xl">HTML, TailwindCSS, JS</span>
+                <span>HTML, TailwindCSS, JS</span>
               </div>
             </div>
 
@@ -296,33 +265,30 @@
               <div
                 class="flex justify-between items-center text-lg sm:text-xl relative"
               >
-                <span class="font-[Neuton]">Jan. 2025</span>
-                <span
-                  class="font-[Poppins] text-2xl sm:text-3xl absolute left-1/2 -translate-x-1/2"
-                >
+                <span>Jan. 2025</span>
+                <h3>
                   Colony-ai.com
-                </span>
+                </h3>
               </div>
 
               <!-- Description -->
               <p
-                class="font-[Neuton] text-center text-sm sm:text-base leading-relaxed"
-              >
+                  class="text-center text-sm sm:text-base leading-relaxed mx-6">
                 A website I built for a friend of mine’s startup idea. It was my
                 first website, and my first time trying out typescript!
               </p>
 
               <!-- Bottom Row -->
-              <div class="flex justify-between items-center text-2xl">
+              <div class="flex justify-between items-center">
                 <a
-                class="font-[Neuton] text-2xl"
+                class="font-[Neuton] text-base sm:text-xl"
                 href="https://github.com/marcusniihauashby/colony"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Source
               </a>
-                <span class="font-[Neuton] text-xl"
+                <span
                   >Typescript, Tailwind CSS, JS, etc.</span
                 >
               </div>

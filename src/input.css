@@ -3,3 +3,49 @@
 body {
     background-color: #1c1c1c;
 }
+
+@layer base {
+
+    /* Just my name basically */
+    h1 {
+        @apply font-[Poppins] py-5 text-white 
+        text-5xl sm:text-6xl md:text-7xl lg:text-8xl
+        transition-all duration-500 font-bold;
+    }
+
+    /* Projects Current/Previous Tags */
+    h2 {
+        @apply font-[Poppins] text-center text-white my-10
+        text-4xl lg:text-5xl
+        transition-all duration-500
+    }
+
+    p {
+        @apply font-[Neuton] text-white text-sm sm:text-base max-w-lg;
+    }
+
+
+    /* Header navbar stuff */
+    ul {
+        @apply flex justify-center  md:justify-end
+        text-xl sm:text-2xl md:text-3xl space-x-8 pb-5
+        transition-all duration-500;
+    }
+    /* Project Names */
+    h3 {
+        @apply font-[Poppins] text-lg sm:text-3xl absolute left-1/2 -translate-x-1/2 text-nowrap
+    }
+
+    span {
+        @apply font-[Neuton] text-base sm:text-xl
+    }
+
+}
+
+@layer components {
+    .card {
+        @apply flex justify-center bg-[#023B38] text-white
+        rounded-2xl p-4 sm:p-8 flex flex-col gap-4 shadow-lg w-full max-w-[600px] relative my-10
+    }
+
+}
