@@ -214,6 +214,9 @@
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
+  }
   .mx-15 {
     margin-inline: calc(var(--spacing) * 15);
   }
@@ -241,8 +244,14 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .flex {
     display: flex;
@@ -255,6 +264,18 @@
   }
   .h-full {
     height: 100%;
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-9\/12 {
+    width: calc(9/12 * 100%);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-11\/12 {
+    width: calc(11/12 * 100%);
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
@@ -301,6 +322,9 @@
   }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .rounded-md {
     border-radius: var(--radius-md);
@@ -375,9 +399,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .decoration-dotted {
     text-decoration-style: dotted;
   }
@@ -403,6 +424,11 @@
   .sm\:h-16 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 16);
+    }
+  }
+  .sm\:w-9\/12 {
+    @media (width >= 40rem) {
+      width: calc(9/12 * 100%);
     }
   }
   .sm\:w-16 {
@@ -453,9 +479,34 @@
       margin-block: calc(var(--spacing) * 12);
     }
   }
+  .md\:mt-12 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 12);
+    }
+  }
   .md\:h-75 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 75);
+    }
+  }
+  .md\:min-h-\[30vh\] {
+    @media (width >= 48rem) {
+      min-height: 30vh;
+    }
+  }
+  .md\:min-h-\[40vh\] {
+    @media (width >= 48rem) {
+      min-height: 40vh;
+    }
+  }
+  .md\:min-h-\[50vh\] {
+    @media (width >= 48rem) {
+      min-height: 50vh;
+    }
+  }
+  .md\:min-h-\[100vh\] {
+    @media (width >= 48rem) {
+      min-height: 100vh;
     }
   }
   .md\:w-1\/2 {
@@ -526,6 +577,11 @@
   .lg\:text-green-500 {
     @media (width >= 64rem) {
       color: var(--color-green-500);
+    }
+  }
+  .xl\:my-10 {
+    @media (width >= 80rem) {
+      margin-block: calc(var(--spacing) * 10);
     }
   }
   .xl\:text-6xl {
